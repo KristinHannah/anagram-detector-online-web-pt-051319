@@ -12,8 +12,7 @@ class Anagram
    # array.find {|w| w.split(" ").sort == self.word.split(" ").sort}
    new_array = []
    array.each do |ana|
-    new_match = ana.split("").sort.join("").match(self.word.split("").sort.join(""))
-    if new_match != nil 
+    if nana.split("").sort == self.word.split("").sort
       new_array << ana
     end 
   end
