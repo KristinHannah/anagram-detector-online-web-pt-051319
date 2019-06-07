@@ -10,10 +10,12 @@ class Anagram
   
   def match(array)
    # array.find {|w| w.split(" ").sort == self.word.split(" ").sort}
+   new_array = []
    array.each do |ana|
     ana.split("").sort.join("").match(self.word.split("").sort.join(""))
-    return ana
+    new_array << ana
   end
+  return new_array
 end
   
 end 
