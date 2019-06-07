@@ -15,6 +15,8 @@ class Anagram
     new_match = ana.split("").sort.join("").match(self.word.split("").sort.join(""))
     new_array << new_match 
   end
+  new_array.uniq 
+  new_array.delete
   return new_array
 end
   
