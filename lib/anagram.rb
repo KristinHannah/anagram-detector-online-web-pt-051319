@@ -17,8 +17,6 @@ class Anagram
       new_array << new_match 
     end 
   end
-  new_array.uniq 
-  new_array.delete('nil')
   new_array
 end
   
