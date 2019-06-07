@@ -17,7 +17,7 @@ class Anagram
   end
   new_array.uniq 
   new_array.delete('nil')
-  return new_array
+  new_array
 end
   
 end 
