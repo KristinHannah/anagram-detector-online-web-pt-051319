@@ -13,7 +13,9 @@ class Anagram
    new_array = []
    array.each do |ana|
     new_match = ana.split("").sort.join("").match(self.word.split("").sort.join(""))
-    new_array << new_match 
+    if new_match != nil 
+      new_array << new_match 
+    end 
   end
   new_array.uniq 
   new_array.delete('nil')
